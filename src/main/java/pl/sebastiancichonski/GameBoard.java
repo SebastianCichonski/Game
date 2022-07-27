@@ -27,6 +27,9 @@ public class GameBoard {
     public Field getField(int x, int y){
         return board[x][y];
     }
+    public void setField(int x, int y, Field field){
+        board[x][y] = field;
+    }
 
     public void show(){
         for(int i = 0; i < board.length; i++){
