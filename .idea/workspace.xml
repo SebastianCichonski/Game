@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="879e5319-201a-4230-98b4-a40f24fb9e14" name="Changes" comment="commit v2 - checkMove(), consequencesOfMovement(), move().">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/sebastiancichonski/PlayerTest.java" afterDir="false" />
+    <list default="true" id="879e5319-201a-4230-98b4-a40f24fb9e14" name="Changes" comment="commit v3 - endGame(), + test">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/sebastiancichonski/GameBoardTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/sebastiancichonski/GameBoardTestFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/sebastiancichonski/LogicTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebastiancichonski/Logic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sebastiancichonski/Logic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebastiancichonski/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sebastiancichonski/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebastiancichonski/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sebastiancichonski/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/sebastiancichonski/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/sebastiancichonski/PlayerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -38,16 +38,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "last_opened_file_path": "C:/Users/sebastian.cichonski/IdeaProjects/MavenCreditApp"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit4&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sebastian.cichonski/IdeaProjects/untitled&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -56,10 +56,56 @@
       <recent name="pl.sebastiancichonski" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PlayerTest">
+  <component name="RunManager" selected="JUnit.LogicTest.endGame">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="MoveGame" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameBoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MoveGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.sebastiancichonski.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.sebastiancichonski" />
+      <option name="MAIN_CLASS_NAME" value="pl.sebastiancichonski.GameBoardTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MoveGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.sebastiancichonski.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.sebastiancichonski" />
+      <option name="MAIN_CLASS_NAME" value="pl.sebastiancichonski.LogicTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogicTest.endGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MoveGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.sebastiancichonski.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.sebastiancichonski" />
+      <option name="MAIN_CLASS_NAME" value="pl.sebastiancichonski.LogicTest" />
+      <option name="METHOD_NAME" value="endGame" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -81,6 +127,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LogicTest.endGame" />
+        <item itemvalue="JUnit.LogicTest" />
+        <item itemvalue="JUnit.GameBoardTest" />
         <item itemvalue="JUnit.PlayerTest" />
         <item itemvalue="Application.Main" />
       </list>
@@ -109,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658961911839</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit v3 - endGame(), + test">
+      <created>1659221716581</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659221716581</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,6 +182,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="commit v2 - checkMove(), consequencesOfMovement(), move()." />
-    <option name="LAST_COMMIT_MESSAGE" value="commit v2 - checkMove(), consequencesOfMovement(), move()." />
+    <MESSAGE value="commit v3 - endGame(), + test" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit v3 - endGame(), + test" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MoveGame$GameBoardTest.ic" NAME="GameBoardTest Coverage Results" MODIFIED="1659303436456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>pl.sebastiancichonski.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -20,6 +20,10 @@ public class GameBoard {
         board[board.length-1][board.length-1] = Field.O;
     }
 
+    public GameBoard(Field board[][]){
+        this.board = board;
+    }
+
     public Field[][] getBoard() {
         return board;
     }
