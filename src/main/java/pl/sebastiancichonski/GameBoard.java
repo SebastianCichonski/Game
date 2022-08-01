@@ -3,7 +3,7 @@ package pl.sebastiancichonski;
 import pl.sebastiancichonski.Field;
 
 public class GameBoard {
-    public static final int BOARD_SIZE = 6;
+    public static final int BOARD_SIZE = 8;
     private Field board[][] = new Field[BOARD_SIZE][BOARD_SIZE];
 
 

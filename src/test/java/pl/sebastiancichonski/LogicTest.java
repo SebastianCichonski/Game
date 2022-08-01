@@ -21,15 +21,50 @@ public class LogicTest {
 
 
     @Test
-    public void endGame() {
+    public void endGame_NoMorePawns_Test() {
         BDDMockito.given(player_O_Mock.getPoints()).willReturn(0);
         BDDMockito.given(player_O_Mock.getName()).willReturn("O");
         BDDMockito.given(player_X_Mock.getName()).willReturn("X");
 
+        boolean result = logic_cut.endGame(player_X_Mock);
+
+        assertTrue(result);
+    }
+
+
+    @Test
+    public void endGame_NoEmptySquares_Test() {
+        BDDMockito.given(player_O_Mock.getPoints()).willReturn(43);
+        BDDMockito.given(player_X_Mock.getPoints()).willReturn(21);
+        BDDMockito.given(player_O_Mock.getName()).willReturn("O");
+        BDDMockito.given(player_X_Mock.getName()).willReturn("X");
 
         boolean result = logic_cut.endGame(player_X_Mock);
 
         assertTrue(result);
+    }
 
+    @Test
+    public void endGame_BlockedOpponent_True_Test() {
+        BDDMockito.given(player_O_Mock.getPoints()).willReturn(41);
+        BDDMockito.given(player_X_Mock.getPoints()).willReturn(5);
+        BDDMockito.given(player_O_Mock.getName()).willReturn("O");
+        BDDMockito.given(player_X_Mock.getName()).willReturn("X");
+
+        boolean result = logic_cut.endGame(player_O_Mock);
+
+        assertTrue(result);
+    }
+
+    @Test
+    public void endGame_BlockedOpponent_False_Test() {
+        BDDMockito.given(player_O_Mock.getPoints()).willReturn(41);
+        BDDMockito.given(player_X_Mock.getPoints()).willReturn(5);
+        BDDMockito.given(player_O_Mock.getName()).willReturn("O");
+        BDDMockito.given(player_X_Mock.getName()).willReturn("X");
+
+        boolean result = logic_cut.endGame(player_X_Mock);
+
+        assertFalse(result);
     }
 }

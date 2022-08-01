@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="879e5319-201a-4230-98b4-a40f24fb9e14" name="Changes" comment="commit v3 - endGame(), + test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/sebastiancichonski/GameBoardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/sebastiancichonski/GameBoardTestFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/sebastiancichonski/LogicTest.java" afterDir="false" />
+    <list default="true" id="879e5319-201a-4230-98b4-a40f24fb9e14" name="Changes" comment="commit v4 - more tests">
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestSuite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebastiancichonski/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sebastiancichonski/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/sebastiancichonski/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/sebastiancichonski/PlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sebastiancichonski/Logic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sebastiancichonski/Logic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/sebastiancichonski/GameBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/sebastiancichonski/GameBoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/sebastiancichonski/GameBoardTestFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/sebastiancichonski/GameBoardTestFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/sebastiancichonski/LogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/sebastiancichonski/LogicTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,16 +40,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit4&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sebastian.cichonski/IdeaProjects/untitled&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
+    "last_opened_file_path": "C:/Users/sebastian.cichonski/IdeaProjects/untitled",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -56,29 +59,7 @@
       <recent name="pl.sebastiancichonski" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LogicTest.endGame">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="MoveGame" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameBoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MoveGame" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.sebastiancichonski.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.sebastiancichonski" />
-      <option name="MAIN_CLASS_NAME" value="pl.sebastiancichonski.GameBoardTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestSuite">
     <configuration name="LogicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MoveGame" />
       <extension name="coverage">
@@ -94,7 +75,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogicTest.endGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LogicTest.endGame_BlockedOpponent_False_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MoveGame" />
       <extension name="coverage">
         <pattern>
@@ -104,13 +85,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.sebastiancichonski" />
       <option name="MAIN_CLASS_NAME" value="pl.sebastiancichonski.LogicTest" />
-      <option name="METHOD_NAME" value="endGame" />
+      <option name="METHOD_NAME" value="endGame_BlockedOpponent_False_Test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LogicTest.endGame_BlockedOpponent_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MoveGame" />
       <extension name="coverage">
         <pattern>
@@ -119,7 +100,33 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.sebastiancichonski" />
-      <option name="MAIN_CLASS_NAME" value="pl.sebastiancichonski.PlayerTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.sebastiancichonski.LogicTest" />
+      <option name="METHOD_NAME" value="endGame_BlockedOpponent_Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogicTest.endGame_NoMorePawns_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MoveGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.sebastiancichonski.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.sebastiancichonski" />
+      <option name="MAIN_CLASS_NAME" value="pl.sebastiancichonski.LogicTest" />
+      <option name="METHOD_NAME" value="endGame_NoMorePawns_Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MoveGame" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSuite" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LogicTest.endGame" />
+        <item itemvalue="JUnit.TestSuite" />
         <item itemvalue="JUnit.LogicTest" />
-        <item itemvalue="JUnit.GameBoardTest" />
-        <item itemvalue="JUnit.PlayerTest" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.LogicTest.endGame_BlockedOpponent_False_Test" />
+        <item itemvalue="JUnit.LogicTest.endGame_BlockedOpponent_Test" />
+        <item itemvalue="JUnit.LogicTest.endGame_NoMorePawns_Test" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659221716581</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit v4 - more tests">
+      <created>1659307879651</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659307879651</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,7 +197,34 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="commit v2 - checkMove(), consequencesOfMovement(), move()." />
     <MESSAGE value="commit v3 - endGame(), + test" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit v3 - endGame(), + test" />
+    <MESSAGE value="commit v4 - more tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit v4 - more tests" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/sebastiancichonski/Logic.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/sebastiancichonski/Logic.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/sebastiancichonski/Logic.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pl/sebastiancichonski/LogicTest.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MoveGame$GameBoardTest.ic" NAME="GameBoardTest Coverage Results" MODIFIED="1659303436456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

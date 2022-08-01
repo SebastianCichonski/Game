@@ -107,17 +107,18 @@ public class Logic {
         if (playerOpponent.getPoints() == 0) {
             return true; //Wygrywa player
             //brak wolnych pól
-        } else if (((player.getPoints() + playerOpponent.getPoints()) - (game.BOARD_SIZE * game.BOARD_SIZE)) == 0) {
+        } else if (((player.getPoints() + playerOpponent.getPoints()) == (game.BOARD_SIZE * game.BOARD_SIZE))) {
             return true; //Liczypy punkty
         } else {//brak mozliwości ruchu
             for (int i = 0; i < game.getBoard().length; i++) {
                 for (int j = 0; j < game.getBoard().length; j++) {
                     if (game.getField(i, j) == fieldOpponent) {
-                        if (!isPossibleToMove(i, j)) {
-                            return true;
+                        if (isPossibleToMove(i, j)) {
+                            return false;
                         }
                     }
                 }
+                return true;
             }
         }
         return false;
