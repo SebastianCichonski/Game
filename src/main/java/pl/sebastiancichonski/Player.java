@@ -2,7 +2,7 @@ package pl.sebastiancichonski;
 
 public class Player {
     private int points;
-    private String name;
+    private final String name;
 
     public Player(String name) {
         this.name = name;
@@ -24,6 +24,4 @@ public class Player {
     public void subPoints(){
         this.points --;
     }
-
-
 }

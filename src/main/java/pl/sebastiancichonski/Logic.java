@@ -3,7 +3,7 @@ package pl.sebastiancichonski;
 import static pl.sebastiancichonski.TypeOfMovement.*;
 
 public class Logic {
-    private GameBoard game;
+    private final GameBoard game;
     Player player_X;
     Player player_O;
 
@@ -11,10 +11,7 @@ public class Logic {
         this.game = game;
         this.player_O = player_O;
         this.player_X = player_X;
-
     }
-
-    //TODO  , sprawdzenie czy wygrana/remis,
 
     private boolean checkField(int x, int y, int a, int b, Player player) {
         return ((game.getField(x, y).name().equals(player.getName())) &&
@@ -107,7 +104,7 @@ public class Logic {
         if (playerOpponent.getPoints() == 0) {
             return true; //Wygrywa player
             //brak wolnych pól
-        } else if (((player.getPoints() + playerOpponent.getPoints()) == (game.BOARD_SIZE * game.BOARD_SIZE))) {
+        } else if (((player.getPoints() + playerOpponent.getPoints()) == (GameBoard.BOARD_SIZE * GameBoard.BOARD_SIZE))) {
             return true; //Liczypy punkty
         } else {//brak mozliwości ruchu
             for (int i = 0; i < game.getBoard().length; i++) {
@@ -118,10 +115,10 @@ public class Logic {
                         }
                     }
                 }
-                return true;
             }
+            return true;
         }
-        return false;
+        //return false;
     }
 
         public boolean move ( int x, int y, int a, int b, Player player){
@@ -172,7 +169,7 @@ public class Logic {
             if (game.getField(x + 2, y) == Field.EMPTY) return true;
         }
         if (isOnBoard(x - 2, y)) {
-            if (game.getField(x - 2, y) == Field.EMPTY) return true;
+            return game.getField(x - 2, y) == Field.EMPTY;
         }
         return false;
     }
